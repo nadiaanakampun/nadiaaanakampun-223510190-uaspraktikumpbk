@@ -1,0 +1,30 @@
+<!-- src/views/Tugas1.vue -->
+<template>
+  <div class="tugas">
+    <h2>Tugas 1</h2>
+    <p>Ini adalah halaman tugas 1.</p>
+    <p><a :href="netlifyUrl" target="_blank">{{ netlifyUrl }}</a></p>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      netlifyUrl: 'https://6610d19c6670f5952dc726ff--sage-dasik-77d8d4.netlify.app/' // URL Netlify untuk Tugas 1
+    };
+  }
+};
+</script>
+
+<style scoped>
+.tugas {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+</style>
